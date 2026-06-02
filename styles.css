@@ -44,32 +44,37 @@ html, body, [data-testid="stAppViewContainer"] {
 }
 
 /* ─── Sidebar Radio Buttons (nav) ───────────────────────────── */
+[data-testid="stSidebar"] .stRadio {
+    margin: 8px 0 !important;
+}
+
 [data-testid="stSidebar"] .stRadio > div {
-    gap: 2px !important;
+    gap: 4px !important;
 }
 
 [data-testid="stSidebar"] .stRadio label {
     color: #D1D5DB !important;
     font-size: 14px !important;
     font-weight: 500 !important;
-    padding: 11px 20px !important;
+    padding: 11px 16px !important;
     border-radius: 8px !important;
     cursor: pointer !important;
     transition: all 0.18s ease !important;
     display: flex !important;
     align-items: center !important;
     gap: 10px !important;
-    margin: 1px 8px !important;
+    margin: 2px 8px !important;
     width: calc(100% - 16px) !important;
 }
 
 [data-testid="stSidebar"] .stRadio label:hover {
-    background-color: rgba(255,255,255,0.07) !important;
-    color: #FFFFFF !important;
+    background-color: rgba(251, 140, 0, 0.15) !important;
+    color: #FB8C00 !important;
 }
 
-[data-testid="stSidebar"] .stRadio [data-baseweb="radio"] {
-    display: none !important;
+[data-testid="stSidebar"] .stRadio label p {
+    margin: 0 !important;
+    padding: 0 !important;
 }
 
 /* ─── Main Content Area ─────────────────────────────────────── */
@@ -263,3 +268,4 @@ hr {
     border-bottom: 2px solid var(--accent) !important;
     background-color: var(--accent-light) !important;
 }
+
